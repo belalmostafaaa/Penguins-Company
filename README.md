@@ -1,3 +1,3 @@
 ## A funny Website that demonstrates some love to Penguins, like providing stable internet for them and providing their other needs.
 
-![image][https://raw.githubusercontent.com/belalmostafaaa/Penguins-Company/refs/heads/main/linux_icon-icons.com_76796.ico]
+![Penguin icon][https://raw.githubusercontent.com/belalmostafaaa/Penguins-Company/refs/heads/main/linux_icon-icons.com_76796.ico]
