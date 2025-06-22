@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PacketPenguin — Smarter Internet, Cooler Birds</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif']
+          },
+          colors: {
+            primary: '#1e293b',
+            accent: '#0ea5e9',
+            highlight: '#facc15'
+          },
+          animation: {
+            fadeIn: "fadeIn 1.5s ease-out forwards",
+            wiggle: 'wiggle 1s ease-in-out infinite'
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0', transform: 'translateY(10px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' }
+            },
+            wiggle: {
+              '0%, 100%': { transform: 'rotate(-3deg)' },
+              '50%': { transform: 'rotate(3deg)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+</head>
+
+<body class="bg-primary text-white font-sans">
+  <header class="bg-accent py-6 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center px-6">
+      <h1 class="text-3xl font-bold text-white animate-wiggle">PacketPenguin</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#features" class="hover:underline">Features</a>
+        <a href="#faq" class="hover:underline">FAQ</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="text-center py-24 bg-gradient-to-b from-accent to-blue-900" id="home">
+    <h2 class="text-5xl font-extrabold mb-6 animate-fadeIn">Internet So Fast, Penguins Use It</h2>
+    <p class="text-xl max-w-2xl mx-auto animate-fadeIn">Introducing PacketPenguin — The only Internet Company provider for Penguins. They need an internet like US</p>
+  </section>
+
+  <section class="py-20 px-6" id="about">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-4xl font-bold text-highlight mb-6">🐧 About Us</h3>
+      <p class="text-lg leading-relaxed">We are the only Company that provides Stable & Fast Internet for Penguins in South America and Australia. Don't be racial and supportal for only humans, Penguins also need internet exactly liks us.</p>
+    </div>
+  </section>
+
+  <section class="bg-gray-900 py-20 px-6" id="features">
+    <div class="max-w-5xl mx-auto">
+      <h3 class="text-4xl font-bold text-highlight mb-10">Cool Features</h3>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+          <h4 class="text-2xl font-semibold mb-2">Fast & Stable Internet</h4>
+          <p>We are curious about penguins needs more than humans.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+          <h4 class="text-2xl font-semibold mb-2">Penguins Curious Company</h4>
+          <p>Our teem is not responsible only for providing internet for penguins, we also curious about all the needs for them.</p>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg">
+          <h4 class="text-2xl font-semibold mb-2">Penguins-powered Support</h4>
+          <p>We don't need any support from humans, as we are enough with the penguins' happenies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-20 px-6" id="faq">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-4xl font-bold text-highlight mb-8">FAQ</h3>
+      <details class="mb-4 bg-gray-800 p-4 rounded">
+        <summary class="cursor-pointer font-semibold">Q: Is this a real company?</summary>
+        <p class="mt-2">A: As real as your Wi-Fi working during asking this question.</p>
+      </details>
+      <details class="mb-4 bg-gray-800 p-4 rounded">
+        <summary class="cursor-pointer font-semibold">Q: Do the penguins deliver the packets?</summary>
+        <p class="mt-2">A: No, we use slaves for that.</p>
+      </details>
+      <details class="mb-4 bg-gray-800 p-4 rounded">
+        <summary class="cursor-pointer font-semibold">Q: Can I get fiber?</summary>
+        <p class="mt-2">A: No, we are not even curious for your needs</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="bg-accent py-20 px-6" id="contact">
+    <div class="max-w-2xl mx-auto text-center text-primary">
+      <h3 class="text-4xl font-bold mb-6">Contact Us</h3>
+      <p class="mb-4">Got questions? Want to apply to be our Chief Penguin Officer? Drop us a message below:</p>
+      <form class="bg-white p-6 rounded-xl shadow-lg">
+        <input type="text" placeholder="Your Name" class="w-full p-3 mb-4 border border-gray-300 rounded">
+        <input type="email" placeholder="Email" class="w-full p-3 mb-4 border border-gray-300 rounded">
+        <textarea placeholder="Message" class="w-full p-3 mb-4 border border-gray-300 rounded"></textarea>
+        <button type="submit" class="bg-primary text-white px-6 py-3 rounded hover:bg-gray-700">Send It 🐧</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-center py-6 text-sm text-gray-400">
+    &copy; 2025 PacketPenguin Inc. All wings reserved.
+  </footer>
+</body>
+
+</html>
